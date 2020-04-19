@@ -81,7 +81,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div id="title" class="title m-b-md">
                     Congelo Content By Ben Abdellaoui
                 </div>
 
@@ -92,21 +92,28 @@
             </div>
         </div>
         {{-- --------------------------------- --}}
-            <div class="mb-5 container">
+    <div class="row  mx-1">
+
+            <div class="mb-5 container col-4"> 
                 <div class="text-center">
             
-                    <h1 class="text-white shadow-lg p-3 mt-3 mb- bg-warning rounded">Papy's Congelo </h1>
+                    <h1 class="text-white shadow-lg p-3 mt-3  bg-primary rounded">Papy's Congelo </h1>
                 </div>
-                <table class="table table-striped table-secondary">
-                    <thead class="bg-dark text-warning">
+                <div class="text-center pt-0 pb-1">
+                    <a class="btn btn-success" href="{{route('pa.create')}}">
+                        <i class="fas fa-plus-square"></i>
+                    </a>
+                </div>
+                <table class="table table-striped table-primary">
+                    <thead class="bg-dark text-info">
                         <tr>
-                            <th scope="col" class="text-center">Id</th>
+                            {{-- <th scope="col" class="text-center">Id</th> --}}
                             <th scope="col" class="text-center">Nom</th>
                             <th scope="col" class="text-center">quantite</th>
                             <th scope="col" class="text-center">unité</th>
                             <th scope="col" class="text-center">note</th>
-                            <th scope="col" class="text-center">img</th>
-                            <th scope="col" class="text-center">tiroir</th>
+                            {{-- <th scope="col" class="text-center">img</th>
+                            <th scope="col" class="text-center">tiroir</th> --}}
                             <th scope="col" class="text-center">Action</th>
                         </tr>
                     </thead>
@@ -117,13 +124,13 @@
                         </thead>
                         @foreach ($tpa->article as $pa)
                         <tr>
-                            <th scope="row" class="text-center">{{$pa->id}}</th>
+                            {{-- <th scope="row" class="text-center">{{$pa->id}}</th> --}}
                             <td class="text-center">{{$pa->nom}}</td>
                             <td class="text-center">{{$pa->quantite}}</td>
                             <td class="text-center">{{$pa->unite}}</td>
                             <td class="text-center">{{$pa->note}}</td>
-                            <td class="text-center"><img class="w-25" src="{{'storage/'.$pa->img}}" alt=""></td>
-                            <td class="text-center">{{$pa->tiroir->categorie}}</td>
+                            {{-- <td class="text-center"><img class="w-25" src="{{'storage/'.$pa->img}}" alt=""></td>
+                            <td class="text-center">{{$pa->tiroir->categorie}}</td> --}}
             
                             
                             <td class="d-flex justify-content-around ">  
@@ -142,21 +149,26 @@
             </div>
             
              {{--    ----------------------------- --}}
-             <div class="mb-5 container">
+             <div class="mb-5 container col-4">
                 <div class="text-center">
             
-                    <h1 class="text-white shadow-lg p-3 mt-3 mb- bg-warning rounded">Maman&Papa's Congelo </h1>
+                    <h1 class="text-white shadow-lg p-3 mt-3 mb- bg-primary rounded">Maman&Papa's Congelo </h1>
                 </div>
-                <table class="table table-striped table-secondary">
-                    <thead class="bg-dark text-warning">
+                <div class="text-center pt-0 pb-1">
+                    <a class="btn btn-success" href="{{route('ma.create')}}">
+                        <i class="fas fa-plus-square"></i>
+                    </a>
+                </div>
+                <table class="table table-striped table-primary">
+                    <thead class="bg-dark text-info">
                         <tr>
-                            <th scope="col" class="text-center">Id</th>
+                            {{-- <th scope="col" class="text-center">Id</th> --}}
                             <th scope="col" class="text-center">Nom</th>
                             <th scope="col" class="text-center">quantite</th>
                             <th scope="col" class="text-center">unité</th>
                             <th scope="col" class="text-center">note</th>
-                            <th scope="col" class="text-center">img</th>
-                            <th scope="col" class="text-center">tiroir</th>
+                            {{-- <th scope="col" class="text-center">img</th>
+                            <th scope="col" class="text-center">tiroir</th> --}}
                             <th scope="col" class="text-center">Action</th>
                         </tr>
                     </thead>
@@ -169,13 +181,13 @@
                             
                         
                             <tr>
-                                <th scope="row" class="text-center">{{$ma->id}}</th>
+                                {{-- <th scope="row" class="text-center">{{$ma->id}}</th> --}}
                                 <td class="text-center">{{$ma->nom}}</td>
                                 <td class="text-center">{{$ma->quantite}}</td>
                                 <td class="text-center">{{$ma->unite}}</td>
                                 <td class="text-center">{{$ma->note}}</td>
-                                <td class="text-center"><img class="img-fluid w-25" src="{{'storage/'.$ma->img}}" alt=""></td>
-                                <td class="text-center">{{$ma->tiroir->categorie}}</td>
+                                {{-- <td class="text-center"><img class="img-fluid w-25" src="{{'storage/'.$ma->img}}" alt=""></td>
+                                <td class="text-center">{{$ma->tiroir->categorie}}</td> --}}
             
                                 
                                 <td class="d-flex justify-content-around ">  
@@ -194,21 +206,26 @@
             </div>
             
             {{-- ------------------------------------------------- --}}
-            <div class="mb-5 container">
+            <div class="mb-5 container col-4">
                 <div class="text-center">
             
-                    <h1 class="text-white shadow-lg p-3 mt-3 mb- bg-warning rounded">Karim&Kelly's Congelo </h1>
+                    <h1 class="text-white shadow-lg p-3 mt-3 mb- bg-primary rounded">Karim&Kelly's Congelo </h1>
                 </div>
-                <table class="table table-striped table-secondary">
-                    <thead class="bg-dark text-warning">
+                <div class="text-center pt-0 pb-1">
+                    <a class="btn btn-success" href="{{route('ka.create')}}">
+                        <i class="fas fa-plus-square"></i>
+                    </a>
+                </div>
+                <table class="table table-striped table-primary">
+                    <thead class="bg-dark text-info">
                         <tr>
-                            <th scope="col" class="text-center">Id</th>
+                            {{-- <th scope="col" class="text-center">Id</th> --}}
                             <th scope="col" class="text-center">Nom</th>
                             <th scope="col" class="text-center">quantite</th>
                             <th scope="col" class="text-center">unité</th>
                             <th scope="col" class="text-center">note</th>
-                            <th scope="col" class="text-center">img</th>
-                            <th scope="col" class="text-center">tiroir</th>
+                            {{-- <th scope="col" class="text-center">img</th>
+                            <th scope="col" class="text-center">tiroir</th> --}}
                             <th scope="col" class="text-center">Action</th>
                         </tr>
                     </thead>
@@ -219,13 +236,13 @@
                         </thead>
                         @foreach ($tka->article as $ka)
                         <tr>
-                            <th scope="row" class="text-center">{{$ka->id}}</th>
+                            {{-- <th scope="row" class="text-center">{{$ka->id}}</th> --}}
                             <td class="text-center">{{$ka->nom}}</td>
                             <td class="text-center">{{$ka->quantite}}</td>
                             <td class="text-center">{{$ka->unite}}</td>
                             <td class="text-center">{{$ka->note}}</td>
-                            <td class="text-center"><img class="img-fluid w-25" src="{{'storage/'.$ka->img}}" alt=""></td>
-                            <td class="text-center">{{$ka->tiroir->categorie}}</td>
+                            {{-- <td class="text-center"><img class="img-fluid w-25" src="{{'storage/'.$ka->img}}" alt=""></td>
+                            <td class="text-center">{{$ka->tiroir->categorie}}</td> --}}
             
                             
                             <td class="d-flex justify-content-around ">  
@@ -239,9 +256,15 @@
                         </tr>
                         @endforeach
                         @endforeach
-                    </tbody>
+                    </tbody> 
                 </table>
             </div>
-        
+        </div>
+        <div style="position: fixed; bottom: 20px; right: 20px;">
+            <a href="#title" class="btn btn-info rounded-circle">
+                <i class="fas fa-arrow-circle-up "></i>
+            </a>
+        </div>
+
     </body>
 </html>

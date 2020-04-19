@@ -92,6 +92,11 @@
         <div class="text-center">
             <button class="btn btn-warning">Editer</button>
             <a href="{{route('ka.index')}}" class="btn btn-danger">annuler</a>
+            <form action="{{route('ka.destroy',$ka)}}" method="post">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger border-white rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
+            </form>
         </div>
     </form>
 </div>
