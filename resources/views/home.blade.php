@@ -28,7 +28,7 @@
         <tbody>
             @foreach ($tpas as $tpa)
             <thead>
-                <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tpa->categorie}}</th>
+                <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tpa->categorie}} <a href="{{route('tpa.edit',$tpa)}}"> <i class="fas fa-pencil-alt border rounded-circle p-1 ml-1  text-white"></i></a></th>
             </thead>
             @foreach ($tpa->article as $pa)
             <tr>
@@ -42,11 +42,11 @@
 
                 
                 <td class="d-flex justify-content-around ">  
-                        <a class="btn btn-warning" href="{{route('pa.edit',$pa)}}">edit</a>   
+                        <a class="btn btn-warning border border-white rounded-circle" href="{{route('pa.edit',$pa)}}"><i class="fas fa-pencil-alt "></i></a>   
                         <form action="{{route('pa.destroy',$pa)}}" method="post">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger" type="submit">delete</button>
+                            <button class="btn btn-danger border-white rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                         </form>
                 </td>
             </tr>
@@ -78,7 +78,7 @@
         <tbody>
             @foreach ($tmas as $tma)
             <thead>
-                <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tma->categorie}}</th>
+                <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tma->categorie}} <a href="{{route('tma.edit',$tma)}}"> <i class="fas fa-pencil-alt border rounded-circle p-1 ml-1  text-white"></i></a></th>
             </thead>
             @foreach ($tma->article as $ma)
                 
@@ -94,11 +94,11 @@
 
                     
                     <td class="d-flex justify-content-around ">  
-                        <a class="btn btn-warning" href="{{route('ma.edit',$ma)}}">edit</a>   
+                        <a class="btn btn-warning border border-white rounded-circle" href="{{route('ma.edit',$ma)}}"><i class="fas fa-pencil-alt "></i></a>   
                         <form action="{{route('ma.destroy',$ma)}}" method="post">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger" type="submit">delete</button>
+                            <button class="btn btn-danger border-white rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                         </form>
                     </td>
                 </tr>  
@@ -128,9 +128,9 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($kas as $ka)
+            @foreach ($tkas as $tka)
             <thead>
-                <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tka->categorie}}</th>
+                <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tka->categorie}} <a href="{{route('tka.edit',$tka)}}"> <i class="fas fa-pencil-alt border rounded-circle p-1 ml-1  text-white"></i></a></th>
             </thead>
             @foreach ($tka->article as $ka)
             <tr>
@@ -144,11 +144,11 @@
 
                 
                 <td class="d-flex justify-content-around ">  
-                        <a class="btn btn-warning" href="{{route('ka.edit',$ka)}}">edit</a>   
+                        <a class="btn btn-warning border border-white rounded-circle" href="{{route('ka.edit',$ka)}}"><i class="fas fa-pencil-alt "></i></a>   
                         <form action="{{route('ka.destroy',$ka)}}" method="post">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger" type="submit">delete</button>
+                            <button class="btn btn-danger border-white rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                         </form>
                 </td>
             </tr>

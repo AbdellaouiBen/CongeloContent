@@ -22,7 +22,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-
 Route::resource('ka', 'KaController')->middleware('auth');
 Route::resource('ma', 'MaController')->middleware('auth');
 Route::resource('pa', 'PaController')->middleware('auth');

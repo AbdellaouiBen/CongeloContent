@@ -73,9 +73,9 @@
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
+                        {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
-                        @endif
+                        @endif --}}
                     @endauth
                 </div>
             @endif
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://www.instagram.com/benabdell?igshid=lem5zbyksm36">Instagram</a>
+                    <a href="https://www.instagram.com/benabdell?igshid=lem5zbyksm36">Ben's Instagram</a>
 
                 </div>
             </div>
@@ -127,11 +127,11 @@
             
                             
                             <td class="d-flex justify-content-around ">  
-                                    <a class="btn btn-warning border rounded-circle" href="{{route('pa.edit',$pa)}}"><i class="fas fa-pencil-alt "></i></a>   
+                                    <a class="btn btn-warning border border-white rounded-circle" href="{{route('pa.edit',$pa)}}"><i class="fas fa-pencil-alt "></i></a>   
                                     <form action="{{route('pa.destroy',$pa)}}" method="post">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
+                                        <button class="btn btn-danger border-white rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                                     </form>
                             </td>
                         </tr>
@@ -179,11 +179,11 @@
             
                                 
                                 <td class="d-flex justify-content-around ">  
-                                    <a class="btn btn-warning border rounded-circle" href="{{route('ma.edit',$ma)}}"><i class="fas fa-pencil-alt "></i></a>   
+                                    <a class="btn btn-warning border border-white rounded-circle" href="{{route('ma.edit',$ma)}}"><i class="fas fa-pencil-alt "></i></a>   
                                     <form action="{{route('ma.destroy',$ma)}}" method="post">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
+                                        <button class="btn btn-danger border-white rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                                     </form>
                                 </td>
                             </tr>  
@@ -229,11 +229,11 @@
             
                             
                             <td class="d-flex justify-content-around ">  
-                                    <a class="btn btn-warning border rounded-circle" href="{{route('ka.edit',$ka)}}"><i class="fas fa-pencil-alt "></i></a>   
+                                    <a class="btn btn-warning border border-white rounded-circle" href="{{route('ka.edit',$ka)}}"><i class="fas fa-pencil-alt "></i></a>   
                                     <form action="{{route('ka.destroy',$ka)}}" method="post">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
+                                        <button class="btn btn-danger border-white rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                                     </form>
                             </td>
                         </tr>
