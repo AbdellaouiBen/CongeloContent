@@ -248,10 +248,12 @@ return [
                 [
                     'text' => 'tableau',
                     'url'  => 'ka',
+                    'icon_color' => 'blue',
                 ],
                 [
                     'text' => 'add',
                     'url'  => 'ka/create',
+                    'icon_color' => 'green',
                 ],
             ],
         ],
@@ -262,10 +264,12 @@ return [
                 [
                     'text' => 'tableau',
                     'url'  => 'ma',
+                    'icon_color' => 'blue',
                 ],
                 [
                     'text' => 'add',
                     'url'  => 'ma/create',
+                    'icon_color' => 'green',
                 ],
             ],
         ],
@@ -276,10 +280,12 @@ return [
                 [
                     'text' => 'tableau',
                     'url'  => 'pa',
+                    'icon_color' => 'blue',
                 ],
                 [
                     'text' => 'add',
                     'url'  => 'pa/create',
+                    'icon_color' => 'green',
                 ],
             ],
         ],
