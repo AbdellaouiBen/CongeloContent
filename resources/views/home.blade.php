@@ -27,9 +27,9 @@
         </thead>
         <tbody>
             @foreach ($tpas as $tpa)
-            <tr>
-                <th colspan="8" class='text-center'>Tirroir {{$tpa->categorie}}</th>
-            </tr>
+            <thead>
+                <th colspan="8" class='text-center bg-secondary text-white'>Tirroir {{$tpa->categorie}}</th>
+            </thead>
             @foreach ($tpa->article as $pa)
             <tr>
                 <th scope="row" class="text-center">{{$pa->id}}</th>
@@ -77,9 +77,9 @@
         </thead>
         <tbody>
             @foreach ($tmas as $tma)
-            <tr>
-                <th colspan="8" class='text-center'>Tirroir {{$tma->categorie}}</th>
-            </tr>
+            <thead>
+                <th colspan="8" class='text-center bg-secondary text-white'>Tirroir {{$tma->categorie}}</th>
+            </thead>
             @foreach ($tma->article as $ma)
                 
             
@@ -129,9 +129,9 @@
         </thead>
         <tbody>
             @foreach ($kas as $ka)
-            <tr>
-                <th colspan="8" class='text-center'>Tirroir {{$tka->categorie}}</th>
-            </tr>
+            <thead>
+                <th colspan="8" class='text-center bg-secondary text-white'>Tirroir {{$tka->categorie}}</th>
+            </thead>
             @foreach ($tka->article as $ka)
             <tr>
                 <th scope="row" class="text-center">{{$ka->id}}</th>

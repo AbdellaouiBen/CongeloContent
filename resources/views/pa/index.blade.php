@@ -27,9 +27,9 @@
                 </thead>
                 <tbody>
                     @foreach ($tpas as $tpa)
-                    <tr>
-                        <th colspan="8" class='text-center'>Tirroir {{$tpa->categorie}}</th>
-                    </tr>
+                    <thead>
+                        <th colspan="8" class='text-center bg-secondary text-white'>Tirroir {{$tpa->categorie}}</th>
+                    </thead>
                     @foreach ($tpa->article as $pa)
                     <tr>
                         <th scope="row" class="text-center">{{$pa->id}}</th>

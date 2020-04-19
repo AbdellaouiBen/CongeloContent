@@ -27,9 +27,9 @@
                 </thead>
                 <tbody>
                     @foreach ($tmas as $tma)
-                    <tr>
-                        <th colspan="8" class='text-center'>Tirroir {{$tma->categorie}}</th>
-                    </tr>
+                    <thead>
+                        <th colspan="8" class='text-center bg-secondary text-white'>Tirroir {{$tma->categorie}}</th>
+                    </thead>
                     @foreach ($tma->article as $ma)
                         
                     
