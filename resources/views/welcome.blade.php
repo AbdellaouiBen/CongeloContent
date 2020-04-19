@@ -97,7 +97,7 @@
         {{-- --------------------------------- --}}
     <div class="row  mx-1">
 
-            <div class="mb-5 container col-4"> 
+            <div class="mb-5 container col-xl-4"> 
                 <div class="text-center">
             
                     <h1 class="text-white shadow-lg p-3 mt-3  bg-primary rounded">Papy's Congelo </h1>
@@ -152,7 +152,7 @@
             </div>
             
              {{--    ----------------------------- --}}
-             <div class="mb-5 container col-4">
+             <div class="mb-5 container col-xl-4">
                 <div class="text-center">
             
                     <h1 class="text-white shadow-lg p-3 mt-3 mb- bg-primary rounded">Maman&Papa's Congelo </h1>
@@ -209,7 +209,7 @@
             </div>
             
             {{-- ------------------------------------------------- --}}
-            <div class="mb-5 container col-4">
+            <div class="mb-5 container col-xl-4">
                 <div class="text-center">
             
                     <h1 class="text-white shadow-lg p-3 mt-3 mb- bg-primary rounded">Karim&Kelly's Congelo </h1>
