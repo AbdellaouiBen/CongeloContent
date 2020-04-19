@@ -23,6 +23,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-Route::resource('ka', 'KaController');
-Route::resource('ma', 'MaController');
-Route::resource('pa', 'PaController');
+Route::resource('ka', 'KaController')->middleware('auth');
+Route::resource('ma', 'MaController')->middleware('auth');
+Route::resource('pa', 'PaController')->middleware('auth');
+
+Route::resource('tka', 'TkaController')->middleware('auth');
+Route::resource('tma', 'TmaController')->middleware('auth');
+Route::resource('tpa', 'TpaController')->middleware('auth');

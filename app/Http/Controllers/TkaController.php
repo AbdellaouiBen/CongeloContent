@@ -57,7 +57,7 @@ class TkaController extends Controller
      */
     public function edit(Tka $tka)
     {
-        //
+        return view('ka.editTiroir',compact('tka'));
     }
 
     /**
@@ -69,7 +69,9 @@ class TkaController extends Controller
      */
     public function update(Request $request, Tka $tka)
     {
-        //
+        $tka->categorie = $request->input('categorie');
+        $tka->save();
+        return redirect()->route('ka.index');
     }
 
     /**

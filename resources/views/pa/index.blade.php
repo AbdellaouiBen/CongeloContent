@@ -28,7 +28,7 @@
                 <tbody>
                     @foreach ($tpas as $tpa)
                     <thead>
-                        <th colspan="8" class='text-center bg-secondary text-white'>Tirroir {{$tpa->categorie}}</th>
+                        <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tpa->categorie}} <a href="{{route('tpa.edit',$tpa)}}"> <i class="fas fa-pencil-alt border rounded-circle p-1 ml-1"></i></a> </th>
                     </thead>
                     @foreach ($tpa->article as $pa)
                     <tr>
@@ -42,11 +42,11 @@
 
                         
                         <td class="d-flex justify-content-around ">  
-                                <a class="btn btn-warning" href="{{route('pa.edit',$pa)}}">edit</a>   
+                                <a class="btn btn-warning border rounded-circle " href="{{route('pa.edit',$pa)}}"><i class="fas fa-pencil-alt "></i></a>   
                                 <form action="{{route('pa.destroy',$pa)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <button class="btn btn-danger" type="submit">delete</button>
+                                    <button class="btn btn-danger rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                                 </form>
                         </td>
                     </tr>

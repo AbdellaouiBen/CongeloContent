@@ -26,9 +26,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($kas as $ka)
+                    @foreach ($tkas as $tka)
                     <thead>
-                        <th colspan="8" class='text-center bg-secondary text-white'>Tirroir {{$tka->categorie}}</th>
+                        <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tka->categorie}} <a href="{{route('tka.edit',$tka)}}"> <i class="fas fa-pencil-alt border rounded-circle p-1 ml-1"></i></a></th>
                     </thead>
                     @foreach ($tka->article as $ka)
                     <tr>
@@ -42,11 +42,11 @@
 
                         
                         <td class="d-flex justify-content-around ">  
-                                <a class="btn btn-warning" href="{{route('ka.edit',$ka)}}">edit</a>   
+                                <a class="btn btn-warning border rounded-circle" href="{{route('ka.edit',$ka)}}"><i class="fas fa-pencil-alt "></i></a>   
                                 <form action="{{route('ka.destroy',$ka)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <button class="btn btn-danger" type="submit">delete</button>
+                                    <button class="btn btn-danger rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                                 </form>
                         </td>
                     </tr>

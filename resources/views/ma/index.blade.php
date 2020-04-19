@@ -28,7 +28,7 @@
                 <tbody>
                     @foreach ($tmas as $tma)
                     <thead>
-                        <th colspan="8" class='text-center bg-secondary text-white'>Tirroir {{$tma->categorie}}</th>
+                        <th colspan="8" class='text-center bg-secondary text-white'>Tiroir {{$tma->categorie}} <a href="{{route('tma.edit',$tma)}}"> <i class="fas fa-pencil-alt border rounded-circle p-1 ml-1"></i></a></th>
                     </thead>
                     @foreach ($tma->article as $ma)
                         
@@ -44,11 +44,11 @@
 
                             
                             <td class="d-flex justify-content-around ">  
-                                <a class="btn btn-warning" href="{{route('ma.edit',$ma)}}">edit</a>   
+                                <a class="btn btn-warning border rounded-circle" href="{{route('ma.edit',$ma)}}"><i class="fas fa-pencil-alt "></i></a>   
                                 <form action="{{route('ma.destroy',$ma)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <button class="btn btn-danger" type="submit">delete</button>
+                                    <button class="btn btn-danger rounded-circle ml-1" type="submit"><i class="fas fa-trash-alt"></i></button>
                                 </form>
                             </td>
                         </tr>  

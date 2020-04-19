@@ -57,7 +57,7 @@ class TpaController extends Controller
      */
     public function edit(Tpa $tpa)
     {
-        //
+        return view('pa.editTiroir',compact('tpa'));
     }
 
     /**
@@ -69,7 +69,9 @@ class TpaController extends Controller
      */
     public function update(Request $request, Tpa $tpa)
     {
-        //
+        $tpa->categorie = $request->input('categorie');
+        $tpa->save();
+        return redirect()->route('pa.index');
     }
 
     /**

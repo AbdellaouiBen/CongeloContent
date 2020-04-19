@@ -57,7 +57,7 @@ class TmaController extends Controller
      */
     public function edit(Tma $tma)
     {
-        //
+        return view('ma.editTiroir',compact('tma'));
     }
 
     /**
@@ -69,7 +69,9 @@ class TmaController extends Controller
      */
     public function update(Request $request, Tma $tma)
     {
-        //
+        $tma->categorie = $request->input('categorie');
+        $tma->save();
+        return redirect()->route('ma.index');
     }
 
     /**
