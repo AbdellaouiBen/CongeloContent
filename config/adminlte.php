@@ -41,7 +41,7 @@ return [
     | Here you can change the logo of your admin panel.
     |
     | For more detailed instructions you can look here:
-    | https://github.com/jeroennoten/Laravel-AdminLTE/#63-logo
+    | https://github.com/jeroennoten/Laravel-AdminLTE/#63-logo      
     |
     */
 
@@ -49,9 +49,9 @@ return [
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
-    'logo_img_xl_class' => 'brand-image-xs',
+    'logo_img_xl_class' => 'brand-image-xs', 
     'logo_img_alt' => 'AdminLTE',
-
+                     
     /*
     |--------------------------------------------------------------------------
     | User Menu
@@ -233,14 +233,11 @@ return [
         ],
         [
             'text' => 'change_password',
-            'url'  => 'admin/settings',
+            'url'  => 'admin/settings',  
             'icon' => 'fas fa-fw fa-lock',
         ],
-        // [
-        //     'text' => 'karim&kelly',
-        //     'url'  => 'ka',
-        //     'icon' => 'fas fa-fw fa-lock',
-        // ],
+        ['header' => "CONGELO'S"],
+
         [
             'text'    => 'Karim&Kelly',
             'icon'    => 'fas fa-fw fa-share',

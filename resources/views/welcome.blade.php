@@ -61,9 +61,7 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-            html{
-                scroll-behavior: smooth;
-            }
+
         </style>
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>

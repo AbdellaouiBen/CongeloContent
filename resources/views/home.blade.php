@@ -3,19 +3,17 @@
 @section('title', 'AdminLTE')
 
 @section('content_header')
-    <h1 class="m-0 text-dark">Dashboard</h1>
+    <h1 id="top" class="m-0 text-dark">Dashboard</h1>
 @stop
 
 @section('content')
 <div class="row">
     <div class=" col-xl-4">
 
-   
-
 <div class="mb-5 container">
     <div class="text-center">
 
-        <h1 class="text-white shadow-lg p-3 mt-3 mb- bg-primary rounded">Papy's Congelo </h1>
+        <h1 id="congelo" class="text-white shadow-lg p-3 mt-3 mb- bg-primary rounded">Papy's Congelo </h1>
     </div>
     <div class="text-center pt-0 pb-1">
         <a class="btn btn-success" href="{{route('pa.create')}}">
@@ -186,5 +184,11 @@
         </table>
     </div>
     </div>
+</div>
+
+<div style="position: fixed; bottom: 20px; right: 20px;">
+    <a href="#top" class="btn btn-info rounded-circle">
+        <i class="fas fa-arrow-circle-up "></i>
+    </a>
 </div>
 @stop

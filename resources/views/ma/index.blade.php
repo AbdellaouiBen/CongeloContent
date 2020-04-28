@@ -3,7 +3,7 @@
 @section('title', 'AdminNova')
 
 @section('content_header')
-    <h1 class="m-0 text-dark">Maman&Papa</h1>
+    <h1 id="top" class="m-0 text-dark">Maman&Papa</h1>
 @stop
 
 @section('content')
@@ -56,6 +56,11 @@
                     @endforeach
                 </tbody>
             </table>
+        </div>
+        <div style="position: fixed; bottom: 20px; right: 20px;">
+            <a href="#top" class="btn btn-info rounded-circle">
+                <i class="fas fa-arrow-circle-up "></i>
+            </a>
         </div>
    
 
